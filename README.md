@@ -6,8 +6,8 @@
 ---
 ## 畫面
 - 首頁
-![](https://i.imgur.com/iUiIToX.png)
+<img src="https://i.imgur.com/iUiIToX.png" width=300 heigh=500 />
 
 - 點擊
-![](https://i.imgur.com/mvNiPZY.png)
+<img src="https://i.imgur.com/mvNiPZY.png" width=300 height=500 />
 
