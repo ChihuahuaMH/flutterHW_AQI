@@ -1,17 +1,13 @@
-# aqi_1410732003
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 # flutterClass_AQI
+
+## 作業內容
+串接環保署 [API](https://opendata.epa.gov.tw/Data/Contents/AQI/?SortField=2)，顯示各觀察站的 AQI，點擊後有詳細資料。
+
+---
+## 畫面
+- 首頁
+![](https://i.imgur.com/iUiIToX.png)
+
+- 點擊
+![](https://i.imgur.com/mvNiPZY.png)
+
