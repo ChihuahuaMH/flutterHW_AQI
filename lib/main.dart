@@ -1,5 +1,16 @@
-import 'dart:ffi';
+/*
 
+*.....*.....*.....*.....*
+|    系級： 資工 3-1      |
+|    學號： 1410732003   |
+|    姓名： 洪敏嫻        |
+*.....*.....*.....*.....*
+
+github：https://github.com/ChihuahuaMH/flutterHW_AQI
+
+*/
+
+import 'dart:ffi';
 import 'package:aqi_1410732003/aqi_service.dart';
 import 'package:aqi_1410732003/station.dart';
 import 'package:flutter/material.dart';
@@ -24,9 +35,7 @@ class MyApp extends StatelessWidget {
                 Icons.info,
                 color: Colors.white,
               ),
-              onPressed: () {
-                // do something
-              },
+              onPressed: () {},
             )
           ],
         ),
@@ -71,6 +80,7 @@ class _AQIListState extends State<AQIList> {
                 itemBuilder: (context, index) {
                   MaterialColor AQIColor;
                   IconData AQIIcon;
+
                   if (snapshot.data[index].aqi <= 50) {
                     AQIColor = Colors.green;
                     AQIIcon = Icons.mood;
@@ -105,8 +115,8 @@ class _AQIListState extends State<AQIList> {
                       ),
                       subtitle: Text(snapshot.data[index].county),
                       trailing: Container(
-                        height: 50,
                         width: 50,
+                        height: 50,
                         decoration: BoxDecoration(
                             color: AQIColor,
                             borderRadius: BorderRadius.all(Radius.circular(50)),
@@ -170,11 +180,11 @@ class AQIPage extends StatelessWidget {
                       color: Colors.teal,
                     ),
                     Text(" ${station.county}",
-                        style: TextStyle(fontSize: 24, color: Colors.teal[700])),
+                        style:
+                            TextStyle(fontSize: 24, color: Colors.teal[700])),
                   ],
                 ),
               ),
-
               Container(
                 padding: EdgeInsets.all(10),
                 child: Row(
@@ -185,11 +195,11 @@ class AQIPage extends StatelessWidget {
                       color: Colors.teal,
                     ),
                     Text(" ${station.siteName}觀測站",
-                        style: TextStyle(fontSize: 24, color: Colors.teal[700])),
+                        style:
+                            TextStyle(fontSize: 24, color: Colors.teal[700])),
                   ],
                 ),
               ),
-
               Container(
                 padding: EdgeInsets.all(10),
                 child: Row(
@@ -200,11 +210,11 @@ class AQIPage extends StatelessWidget {
                       color: Colors.teal,
                     ),
                     Text(" 狀態 ：${station.status}",
-                        style: TextStyle(fontSize: 24, color: Colors.teal[700])),
+                        style:
+                            TextStyle(fontSize: 24, color: Colors.teal[700])),
                   ],
                 ),
               ),
-
               Container(
                 padding: EdgeInsets.all(10),
                 child: Row(
@@ -215,11 +225,11 @@ class AQIPage extends StatelessWidget {
                       color: Colors.teal,
                     ),
                     Text(" 污染 ：${station.pollutant}",
-                        style: TextStyle(fontSize: 24, color: Colors.teal[700])),
+                        style:
+                            TextStyle(fontSize: 24, color: Colors.teal[700])),
                   ],
                 ),
               ),
-
               Container(
                 padding: EdgeInsets.all(10),
                 child: Row(
@@ -230,11 +240,11 @@ class AQIPage extends StatelessWidget {
                       color: Colors.teal,
                     ),
                     Text(" AQI ：${station.aqi}",
-                        style: TextStyle(fontSize: 24, color: Colors.teal[700])),
+                        style:
+                            TextStyle(fontSize: 24, color: Colors.teal[700])),
                   ],
                 ),
               ),
-
               Container(
                 padding: EdgeInsets.all(10),
                 child: Row(
@@ -245,11 +255,11 @@ class AQIPage extends StatelessWidget {
                       color: Colors.teal,
                     ),
                     Text(" PM2.5 ：${station.pm25}",
-                        style: TextStyle(fontSize: 24, color: Colors.teal[700])),
+                        style:
+                            TextStyle(fontSize: 24, color: Colors.teal[700])),
                   ],
                 ),
               ),
-
             ],
           ),
         ));
