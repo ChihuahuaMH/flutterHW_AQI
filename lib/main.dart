@@ -167,7 +167,7 @@ class AQIPage extends StatelessWidget {
           backgroundColor: Colors.teal[200],
         ),
         body: Container(
-          margin: EdgeInsets.all(20),
+          margin: EdgeInsets.all(15),
           child: Column(
             children: [
               Container(
